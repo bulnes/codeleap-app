@@ -1,9 +1,8 @@
 export const LabelStyles = {
-  DEFAULT: 'text-base font-normal text-black mb-3',
+  DEFAULT: 'text-base font-normal text-black block',
 }
 
-export default function Label(props) {
-  const { text, htmlFor, type, ...otherProps} = props
+export default function Label({ text, htmlFor, type, ...otherProps}) {
   const labelStyle = type || LabelStyles.DEFAULT
 
   return (

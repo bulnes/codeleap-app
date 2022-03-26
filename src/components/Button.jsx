@@ -9,8 +9,7 @@ export const ButtonStyles = {
   }
 }
 
-export default function Button(props) {
-  const { text, type, ...otherProps} = props
+export default function Button({ text, type, ...otherProps}) {
   const { buttonStyle, labelStyle } = type || ButtonStyles.DEFAULT
 
   return (
