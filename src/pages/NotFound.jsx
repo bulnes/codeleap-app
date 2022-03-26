@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import Container from "../pageComponents/Container";
 
 export default function NotFound() {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center">
+    <Container>
       <h1 className="font-bold text-9xl">
         404
       </h1>
@@ -16,6 +17,6 @@ export default function NotFound() {
           Go home
         </Link>
       </p>
-    </div>
+    </Container>
   )
 }

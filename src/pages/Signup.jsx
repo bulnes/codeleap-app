@@ -4,11 +4,12 @@ import Label from "../components/Label";
 import Title from "../components/Title";
 import ActionButtons from "../pageComponents/ActionButtons";
 import Card from "../pageComponents/Card";
+import Container from "../pageComponents/Container";
 import FormGroup from "../pageComponents/FormGroup";
 
 export default function Signup() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-gray-300">
+    <Container>
       <Card>
         <Title text='Welcome to CodeLeap network!' />
 
@@ -21,6 +22,6 @@ export default function Signup() {
           <Button text={'Enter'} type={ButtonStyles.CONTRAST} />
         </ActionButtons>
       </Card>
-    </div>
+    </Container>
   )
 }
