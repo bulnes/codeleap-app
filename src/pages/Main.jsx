@@ -1,24 +1,19 @@
-import Button, { ButtonStyles } from '../components/Button'
-import InputText from '../components/InputText'
-import Label from '../components/Label'
-import Card from '../pageComponents/Card'
+import Title, { TitleStyles } from '../components/Title'
+import Card, { CardBody, CardHeader, CardStyles } from '../pageComponents/Card'
+import Container from '../pageComponents/Container'
 
 export default function Main() {
   return (
-    <div>
-      <Card>
-        <Button text="Cancel" type={ButtonStyles.DEFAULT} /> <br /><br />
-        <Button text="Enter" type={ButtonStyles.CONTRAST} /> <br /><br />
-        <Button text="ok" type={ButtonStyles.Default} /> <br /><br />
-        <Button text="Create" type={ButtonStyles.CONTRAST} /> <br /><br />
+    <Container>
+      <Card type={CardStyles.LARGE}>
+        <CardHeader>
+          <Title text={'CodeLeap Network'} type={TitleStyles.CONTRAST} />
+        </CardHeader>
 
-        <Label text='Please enter your username' />
-        <InputText placeholder='John Doe' />
-
-        <Label text='Title' />
-        <Label text='Content' />
+        <CardBody>
+          <p>Teste</p>
+        </CardBody>
       </Card>
-
-    </div>
+    </Container>
   )
 }
