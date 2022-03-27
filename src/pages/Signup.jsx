@@ -18,7 +18,7 @@ export default function Signup() {
         <CardBody>
           <FormGroup>
             <Label text={'Please enter your username'} htmlFor={'signup-username'} />
-            <InputText type='text' placeholder='John doe' id='signup-username' name='username' />
+            <InputText type='text' placeholder='John doe' id='signup-username' name='username' autofocus='autofocus' />
           </FormGroup>
 
           <ActionButtons>

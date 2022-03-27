@@ -9,6 +9,21 @@ export const ButtonStyles = {
   }
 }
 
+export const ButtonIconsTypes = {
+  EDIT: '/icons/edit.png',
+  DELETE: '/icons/delete.png'
+}
+
+export function ButtonIcon({ text, type, ...otherProps}) {
+  const buttonIcon = process.env.PUBLIC_URL + type
+
+  return (
+    <button className='border-none flex items-center justify-center' {...otherProps}>
+      <img src={buttonIcon} alt={text} title={text} width='30' height='30' loading='lazy' />
+    </button>
+  )
+}
+
 export default function Button({ text, type, ...otherProps}) {
   const { buttonStyle, labelStyle } = type || ButtonStyles.DEFAULT
 
